@@ -1,0 +1,25 @@
+.footer {
+    padding-top: 2rem;
+
+    &__contacts {
+        margin-top: 2rem;
+
+        div {
+            margin-top: 1rem;
+        }
+    }
+
+    &__back {
+        color: $secondary-color;
+        font-family: 'Neue Montreal Light';
+        font-size: 17px;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+
+    &__copy {
+        position: absolute;
+        right: 1rem;
+        margin-top: 0.1rem;
+    }
+}

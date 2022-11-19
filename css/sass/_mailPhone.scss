@@ -1,0 +1,85 @@
+ .container {
+    position: absolute;
+    width: 100vw;
+    padding: 2rem 1rem 0 1rem;
+    
+
+    h1 {
+        margin: 0;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__adress {
+        font-family: 'Neue Montreal Light';
+        color: $text-color;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    h4 {
+        font-family: 'Neue Montreal Light';
+        color: #616161;
+        font-size: 15px;
+    }
+
+    &__input {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        input {
+            background: $primary-color;
+            border: none;
+            border: 1px solid #616161;
+            color: $text-color;
+            padding: 0.7rem 0.5rem 0.7rem;
+            font-size: 11px;
+            outline: none;
+        }
+
+        textarea {
+            grid-column: 1 / span 2;
+            background: $primary-color;
+            border: none;
+            border: 1px solid #616161;
+            color: $text-color;
+            padding: 0.7rem 0.5rem 0.7rem;
+            font-size: 11px;
+            outline: none;
+            resize: none;
+        }
+    }
+
+    button {
+        position: relative;
+        float: right;
+        background: $primary-color;
+        border: 1px solid $secondary-color;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 1.2rem;
+        padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+        color: #fff;
+    }
+
+    &__follow {
+        font-size: 20px;
+        position: relative;
+        margin-top: 8rem;
+        color: $text-color;
+        font-family:  'Neue Montreal Light';
+    }
+
+    ul {
+        margin-top: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 15px;
+    }
+ }

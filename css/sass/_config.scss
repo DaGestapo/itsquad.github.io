@@ -1,0 +1,69 @@
+$primary-color: #202020;
+$secondary-color: #BFE55E;
+$text-color: #CBCBCB;
+
+
+@mixin dectpot {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@font-face {
+    font-family: 'Neue Montreal Regular';
+    src: url("../../otf/NeueMontreal-Regular.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Neue Montreal Medium';
+    src: url("../../otf/NeueMontreal-Medium.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Neue Montreal Light';
+    src: url("../../otf/NeueMontreal-Light.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Neue Montreal MediumItalic';
+    src: url("../../otf/NeueMontreal-MediumItalic.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Neue Montreal Italic';
+    src: url("../../otf/NeueMontreal-Italic.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Neue Montreal ItalicItalic';
+    src: url("../../otf/NeueMontreal-LightItalic.otf");
+    font-style: normal;
+}
+
+
+
+
+
+
+
+@function set-text-color($color) {
+    @if( lightning( $color < 40% ) ) {
+        @return $text-color; 
+    } @else {
+        @return $primary-color;
+    }
+}
+
+
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+

@@ -1,0 +1,148 @@
+.head {
+
+    button {
+        @include transition;
+     }
+    
+     button:hover {
+        background-color: #353535;
+    
+        
+     }
+
+    &__menu {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--toggle {
+            height: 1.7rem;
+            width: 1.7rem;
+            background: transparent;
+            position: relative;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 0.5rem; 
+            cursor: pointer;
+            @include transition;
+            z-index: 1;
+
+            .line {
+                width: 100%;
+                height: 2px;
+                background: $text-color;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: $text-color;
+                @include transition;
+            }
+            &::before {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: $text-color;
+                @include transition;
+            }
+
+            &:hover {
+                opacity: 0.9;
+                
+            }
+
+        }
+
+        .change {
+            transform: rotate(360deg);
+            visibility: visible;
+            .line {
+                visibility: hidden;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: $primary-color;
+                transform: rotate(45deg) translate( -7px, -7px);
+            }
+            &::before {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: $primary-color;
+                transform: rotate(-45deg) translate(-8px, 9px);
+            }
+    
+            &:hover {
+                opacity: 0.9;
+                
+            }
+        }
+    }
+
+    &__article {
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        h1 { 
+            margin-top: 0;
+            color: $secondary-color;
+            font-family: 'Neue Montreal Regular';
+            font-size: 3rem;
+
+            span {
+                font-family: 'Neue Montreal Italic';
+            }
+        }
+
+        h2 {
+            margin-top: 1rem;
+            font-family: 'Neue Montreal regular';
+            font-size: 1.2rem;
+
+            span {
+                color: $secondary-color;
+                font-family: 'Neue Montreal Italic';
+            }
+        }
+
+        &__img {
+            margin-top: 5rem;
+            background-image: url(..//..//img/imgHead.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 350px;
+            border-radius: 5px;
+
+        }
+
+        button {
+            margin-top: 2rem;
+            color: $text-color;
+            font-size: 18px;
+            width: 13rem;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            padding: 12px;
+            background: $primary-color;
+            border: 1px solid $secondary-color;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.arrowDesctop {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+

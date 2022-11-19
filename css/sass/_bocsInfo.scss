@@ -1,0 +1,125 @@
+ // About
+
+
+ .about {
+    margin-top: 5rem;
+
+    h1 {
+        color: $secondary-color;
+        font-size: 30px;
+        font-family: 'Neue Montreal Light';
+    }
+
+    h2 {
+        margin-top: 2rem;
+        font-family: 'Neue Montreal Light';
+        text-transform: uppercase;
+    } 
+    
+
+    .img1{
+        margin-top: 2rem;
+        border-radius: 5px;
+        background: url('..//..//img/about1.png');
+        background-repeat: no-repeat;
+        height: 270px;
+        width: 100%;
+    }
+
+    .img2 {
+        margin-top: 2rem;
+        border-radius: 5px;
+        background: url('..//..//img/about2.png');
+        background-repeat: no-repeat;
+        height: 260px;
+        width: 100%;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+ }
+
+ // Advantages
+
+ .advantages {
+    margin-top: 5rem;
+
+
+    h1 {
+        color: $secondary-color;
+        font-size: 30px;
+        font-family: 'Neue Montreal Light';
+    }
+
+    &__para {
+        margin-top: 2rem;
+        border-top: 1px solid #F3FFCE;
+
+        p {
+            margin: 1rem 0rem 1rem 0;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__list {
+        margin-top: 1rem;
+        border-top: 1px solid #F3FFCE;
+        border-bottom: 1px solid #F3FFCE;
+
+        li {
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-family: 'Neue Montreal Italic';
+        }
+
+        p {
+            margin: 0.2rem 0 1rem 0;
+            font-size: 20px;
+            margin-left: 2rem;
+        }
+    }
+ }
+
+ // IT SQUAD IN NMBERS 
+
+ .itSquadInNumbers {
+    margin-top: 5rem;
+
+    h1 {
+        color: $secondary-color;
+        font-family: 'Neue Montreal Light';
+        font-size: 30px;
+
+        span {
+            font-family: 'Neue Montreal ItalicItalic';
+        }
+    }
+
+    &__blocks {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &--item {
+            border-bottom: 1px solid #F3FFCE;
+
+            h5 {
+                padding-left: 4rem;
+                font-size: 24px;
+                margin-top: 2rem;
+            }
+
+            p {
+                margin: 1rem 4rem 1rem;
+                font-size: 20px;
+            }
+        }
+    }
+ }
+

@@ -1,0 +1,46 @@
+@import 'reset', 'config';
+@import 'popupmenu', 'header';
+@import  'bocsInfo', 'bocsLists', 'footer';
+@import 'mailPhone';
+@import 'responsive';
+
+html {
+    font-family: 'Neue Montreal Regular';
+    color: $text-color;
+}
+
+main {
+    margin: 2rem auto auto;
+    width: 90%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: $secondary-color;
+    margin-top: 5rem;
+    font-size: 30px;
+    font-family: 'Neue Montreal Light';
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Neue Montreal Light';
+}
+
+hr {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.hide {
+    position: relative;
+    height: 0;
+    top: 0;
+    visibility: hidden;
+}

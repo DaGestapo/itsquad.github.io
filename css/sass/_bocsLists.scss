@@ -1,0 +1,175 @@
+// Services
+
+.services {
+    margin-top: 5rem;
+
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: 'Neue Montreal Light';
+    }
+
+    &__blocks {
+        margin-top: 2rem;
+
+        &--item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid #F3FFCE;
+            cursor: pointer;
+
+            h5 {
+                font-family: 'Neue Montreal ItalicItalic';
+                font-size: 20px;
+                margin: 0.5rem 0 4rem 0;
+            }
+
+            a {
+                padding: 4rem 0 1.5rem;
+                font-size: 20px;
+                @include transition;
+
+            }
+
+            svg {
+                position: absolute;
+                right: 0;
+                margin-right: 5%;
+                @include transition;
+            }
+
+            &:hover {
+                color: $secondary-color;
+
+                svg line{
+                    stroke: $secondary-color;
+                }
+            }
+        }
+    }
+ }
+
+ // Stage of work
+
+ .stage {
+
+
+    h2 {
+        margin-top: 2rem;
+        font-family: 'Neue Montreal Light';
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    a {
+        font-size: 20px;
+    }
+ }
+
+ // The team
+
+ .team {
+    margin-top: 5rem;
+
+    .hideimg {
+        height: 0;
+    }
+
+    img {
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: 'Neue Montreal Light';
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+ }
+
+ // Our customers
+
+ .customers {
+
+    &__blocks {
+        margin-top: 2rem;
+        border-bottom: 1px solid #F3FFCE;
+
+        &--item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #F3FFCE;
+            cursor: pointer;
+            @include transition;
+        
+
+            p {
+                font-size: 20px;
+                margin: 1.5rem 0 1.5rem 0;
+                text-transform: uppercase;
+            }
+
+            svg {
+                @include transition;
+            }
+
+            &:hover {
+                color: $secondary-color;
+
+                svg line{
+                    stroke: $secondary-color;
+                }
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+    }
+ }
+
+ // Lets discuss
+
+
+
+ .dicuss {
+
+    button {
+        @include transition;
+     }
+    
+     button:hover {
+        background-color: #353535;
+    
+        
+     }
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    button {
+        margin-top: 3rem;
+        color: $text-color;
+        font-size: 18px;
+        text-transform: uppercase;
+        width: auto;
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
+        padding: 15px;
+        background: $primary-color;
+        border: 1px solid $secondary-color;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+ }
